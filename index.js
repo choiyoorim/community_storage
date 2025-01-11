@@ -1,12 +1,13 @@
 const express = require('express');
-
 const app = express();
-
 const PORT = 8000;
-
 const cors = require('cors');
-app.use(cors());
+const router = require("./routes");
 
+app.use(cors());
+app.use(express.json());
+
+app.use(router);
 app.get('/', (req, res) => {
     res.send('<h1> SERVER IS RUNNING 🏃🏻 </h1>');
 });

@@ -1,0 +1,3 @@
+module.exports = {
+    POST_BOARD_LOG_SUCCESS: 'POST_BOARD_LOG_SUCCESS'
+};
